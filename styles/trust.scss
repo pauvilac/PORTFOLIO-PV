@@ -1,0 +1,48 @@
+@import "animations.scss";
+
+$background-color: #fbf9f7;
+$font-color: #555555;
+
+body{
+	animation: fade_in 2s ease;
+}
+
+.panel{
+	    height: 100%;
+    width: 100%;
+    position: absolute !important;
+}
+
+.title{
+	margin: 0 auto;	
+}
+
+#introduction{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    top:0;
+}
+
+#content{
+	top: 200vh;
+    background-color: #555555;
+}
+
+.chevron-down{
+	animation: chevron_down_anim 1s infinite cubic-bezier(0, 0, 0.2, 1);
+	font-size: 40px !important;
+    position: absolute;
+    bottom: 10%;
+}
+
+#separator{
+    width: 100%;
+    height: 100vh;
+    top: 100vh;
+	position: relative;
+	background-repeat: repeat-x;
+	background-image: -webkit-linear-gradient(0deg, $font-color, $background-color);
+	background-image: -o-linear-gradient(0deg, $font-color, $background-color);
+	background-image: linear-gradient(0deg, $font-color, $background-color);
+}

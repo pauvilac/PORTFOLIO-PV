@@ -1,0 +1,16 @@
+@keyframes chevron_down_anim {
+  0% {
+    transform: translateY(0); }
+  25% {
+    transform: translateY(-10px); }
+  50% {
+    transform: translateY(5px); }
+  100% {
+    transform: translateY(0); } }
+@keyframes fade_in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*# sourceMappingURL=animations.css.map */
