@@ -14,7 +14,7 @@ html{
 
 #dashboard{}
 #main{
-    background-color: red; 
+    background-color: #eeeeee; 
 }
 #about{
     background-color: green;
@@ -26,12 +26,68 @@ html{
     background-color: yellow;
 }
 
-  #video{
-    width: 100vw;
-    height: auto;
-    background-size: cover;
-  }
+#video{
+  width: 100vw;
+  height: auto;
+  background-size: cover;
+}
 
+.fp-tableCell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact-button {
+    top: 10%;
+    left: 10%;
+}
+#cv-button {
+    bottom: 10%;
+    left: 10%;
+}
+#work-button {
+    top: 10%;
+    right: 10%;
+}
+#portfolio-button {
+    bottom: 10%;
+    right: 10%;
+}
+.card{
+  background: lightgray;
+  padding: 15px;
+  border-radius: 1px;
+  box-shadow: 0px 5px 17px -1px rgba(0, 0, 0, 0.43);
+  color: white;
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  font-family: monospace;
+  cursor: pointer;
+  &:hover{
+    box-shadow: 0px 5px 25px 3px rgba(0, 0, 0, 0.43);
+    transition: all 700ms ease;
+    transform: perspective(0rem) rotate3d(0, 0, 0, 0) !important;
+  }
+}
+.full-panel{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.quarter {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 

@@ -24,6 +24,9 @@ $('#btn6').on('click', function(){
 	vid.currentTime = 1.0;
 	rewind(1.0);
 });
+$(".card").faceCursor({
+	perspective: "3rem",
+});
 
 function timedPlay(time){
 	vid.play();
@@ -33,7 +36,12 @@ function timedReverse(time){
 	rewind(1.0);
 	setTimeout(pause, time*1000);
 };
-
 function pause(){
 	vid.pause();
 };
+
+
+
+
+
+
